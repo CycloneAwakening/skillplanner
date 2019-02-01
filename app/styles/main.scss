@@ -3,6 +3,34 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+<<<<<<< HEAD
+/* http://hslpicker.com/#3357a3 */
+ /* Colors */
+$swg-skill-box-bg-color: #0a6d82;
+$swg-skill-box-bg-color-selected: #0bbc3a;
+$swg-skill-box-border-color: #004655;
+$swg-skill-box-border-color-selected: #09785c;
+$swg-skill-box-shadow: inset 0 0 0 1px $swg-skill-box-border-color;
+$swg-skill-box-font-color: #fff;
+$swg-skill-box-text-shadow: 1px 1px 3px #000;
+
+$swg-button-bg-color: #07414c;
+$swg-button-border: #25798c;
+$swg-button-button-shadow: inset 0 0 0 1px $swg-button-border;
+
+$swg-menu-inner-bg: #0b9cb7;
+$swg-menu-outer-bg: #08505c;
+$swg-menu-inner-shadow: inset 0 0 18px $swg-menu-outer-bg;
+$swg-menu-border-color: #1cffff;
+
+$swg-text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+
+/* Styles */
+$swg-skill-box-border-radius: 6px;
+$swg-skill-box-border-width: 1px;
+
+=======
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -11,11 +39,24 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 .grid {
+<<<<<<< HEAD
+  height: 356px;
+}
+.ui-grid-render-container-body .ui-grid-viewport {
+  height: 323px;
+}
+
+
+body {
+  padding: 0;
+
+=======
  height: 400px;
 }
 
 body {
   padding: 0;
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -26,6 +67,78 @@ body {
   padding-right: 15px;
 }
 
+<<<<<<< HEAD
+$revelation-bg-color: #292d30;
+$sr-red: #b80000;
+$sr-red-dark: #560707;
+
+html {
+  background-color: darken($revelation-bg-color, 10%);
+}
+a {
+  color: #777;
+}
+a:hover {
+  color: #fff;
+}
+a:active {
+  color: #eee;
+}
+
+.navbar-spacer {
+  display: none;
+  width: 100%;
+  background-color: darken($revelation-bg-color, 10%);
+}
+nav.navbar-swg {
+  background-color: #000;
+  padding: 8px 0;
+  margin-bottom: 0;
+  border: none;
+  .container {
+    position: relative;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    color: #fff !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+  li a:hover {
+    color: rgba(255,255,255,.8) !important;
+  }
+  li a:active {
+    color: rgba(255,255,255,.6) !important;
+  }
+  .navbar-header {
+    position: relative;
+    left: 15px;
+    bottom: 0;
+    display: inline-block;
+  }
+  .nav-logo {
+    width: 297px;
+    height: auto;
+    max-width: 90%;
+    margin-right: 15px;
+  }
+  .navbar-nav {
+    float: right;
+    margin: 15px -15px;
+  }
+}
+.page-head {
+  background-color: darken($revelation-bg-color, 10%);
+  color: #e2e2e2;
+  padding: 40px 0;
+}
+
+=======
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -40,11 +153,26 @@ body {
   }
 }
 
+<<<<<<< HEAD
+.todo-wrap {
+  background-color: $revelation-bg-color;
+  color: #eee;
+  padding: 25px 0;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  background-color: darken($revelation-bg-color, 10%);
+  color: #ddd;
+  border-top: 1px solid darken($swg-button-bg-color, 30%);
+=======
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 }
 
 .container-narrow > hr {
@@ -94,11 +222,55 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+<<<<<<< HEAD
+  .navbar-spacer {
+    height: 24px;
+    display: block;
+  }
+  nav.navbar-swg {
+    .navbar-header {
+      position: absolute;
+      left: 15px;
+      bottom: 0;
+    }
+    .navbar-nav {
+      float: right;
+      margin: 0;
+    }
+  }
+=======
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 }
 @media screen and(min-width: 1200px) {
   .container {
     max-width: 1170px;
   }
+<<<<<<< HEAD
+  .dropdown-menu {
+    min-width: 600px;
+  }
+  .profession-wrap {
+    padding-right: 0;
+  }
+  .character-skill-mods-wrap {
+    padding-left: 0;
+  }
+  .skill-points-wrap {
+    margin-top: 10px !important;
+  }
+}
+
+@media screen and(max-width: 479px) {
+  nav.navbar-swg .navbar-nav {
+    float: none;
+    text-align: center;
+    li {
+      float: none;
+      display: inline-block;
+    }
+  }
+}
+=======
 }
 
 /* http://hslpicker.com/#3357a3 */
@@ -108,6 +280,7 @@ $swg-skill-box-border-color: lighten($swg-skill-box-bg-color, 20%) !default;
 $swg-skill-box-border-radius: 3px;
 $swg-skill-box-border-width: 1px;
 $swg-skill-box-font-color: #fff;
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 
 @mixin border-width($px) {
 
@@ -117,6 +290,98 @@ $swg-skill-box-font-color: #fff;
   border-right-width: $px;
 }
 
+<<<<<<< HEAD
+@mixin swg-planner-wrap {
+
+  color: $swg-skill-box-font-color;
+  background-color: $swg-menu-outer-bg;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@mixin profession-trees {
+
+  background-color: $swg-menu-inner-bg;
+  border: solid 1px $swg-menu-border-color;
+  border-radius: 6px;
+  box-shadow: $swg-menu-inner-shadow;
+  padding: 15px;
+  margin: 5px;
+}
+
+@mixin swg-skill-box-wrap() {
+
+  padding-top: 4px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+}
+
+@mixin swg-skill-box-corner($bg-color, $border-color) {
+
+  content: '';
+  height: 10px;
+  width: 10px;
+  background-color: $bg-color;
+  border: solid 1px $border-color;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: 120;
+}
+
+@mixin swg-skill-single() {
+
+  background-color: $swg-skill-box-bg-color;
+  box-shadow: $swg-skill-box-shadow;
+  color: $swg-skill-box-font-color;
+  text-shadow: $swg-skill-box-text-shadow;
+  height: 100%;
+  min-height: 40px;
+  text-align: center;
+  padding-top: 4px;
+  padding-right: 15px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  &:hover {
+    background-color:lighten($swg-skill-box-bg-color, 30%);
+    color: $swg-skill-box-font-color;
+    cursor: pointer;
+  }
+  .selected & {
+    background-color: $swg-skill-box-bg-color-selected;
+    border-color: $swg-skill-box-border-color-selected;
+  }
+  &.selected:hover {
+    background-color: lighten($swg-skill-box-bg-color-selected, 30%);
+    border-color: $swg-skill-box-border-color-selected;
+    cursor: pointer;
+  }
+  &:after {
+    @include swg-skill-box-corner($swg-menu-inner-bg, $swg-skill-box-border-color);
+    top: -5px;
+    right: -5px;
+  }
+  &:before {
+    @include swg-skill-box-corner($swg-menu-inner-bg, $swg-skill-box-border-color);
+    bottom: -5px;
+    left: -5px;
+  }
+  &.selected:after {
+    @include swg-skill-box-corner($swg-menu-inner-bg, $swg-skill-box-border-color-selected);
+  }
+  &.selected:before {
+    @include swg-skill-box-corner($swg-menu-inner-bg, $swg-skill-box-border-color-selected);
+  }
+  .name {
+    font-size: 85%;
+    margin-bottom: 0px;
+  }
+  .description {
+    font-size: 70%;
+=======
 
 @mixin swg-skill-box() {
 
@@ -145,12 +410,248 @@ $swg-skill-box-font-color: #fff;
   }
   .description {
     font-size: 75%;
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
   }
 }
 
 /* Master and novice boxes are a single row with a single skill
 */
 
+<<<<<<< HEAD
+.swg-planner-wrap {
+  @include swg-planner-wrap;
+}
+
+.profession-trees h3, .character-skill-mods h3 {
+  margin-top: 0;
+}
+
+.dropdown-menu, .tooltip-inner {
+  color: #fff;
+  text-shadow: $swg-text-shadow;
+  padding: 16px 4px;
+  border-radius: 0;
+  background-color: rgba(11, 156, 183, 0.9);
+  border: solid 1px rgba(28,255,255,0.9)
+}
+.dropdown-menu a {
+  color: lighten($swg-skill-box-bg-color, 55%);
+  text-shadow: $swg-text-shadow;
+}
+.tooltip-inner {
+  text-align: left;
+  padding: 4px 6px;
+  width: 260px;
+  max-width: 95%;
+  ul {
+    padding-left: 6px;
+    list-style: none;
+  }
+  skill-description {
+    font-size: 85%;
+  }
+}
+.tooltip-arrow {
+  display: none;
+}
+.tooltip.top {
+  margin-top: 0;
+}
+
+/* Buttons */
+
+  /* Sorting Labels */
+.ui-grid-top-panel, .ui-grid-header-canvas, .ui-grid-header-viewport {
+  background-color: $swg-skill-box-bg-color;
+  border-radius: 6px 6px 0 0;
+}
+.ui-grid-header-cell {
+  background-color: $swg-skill-box-bg-color;
+  border-color: $swg-menu-border-color;
+  font-size: 70%;
+  text-align: left;
+}
+.ui-grid {
+  border: 1px solid #005c6d;
+  border-radius: 6px;
+  box-shadow: $swg-menu-inner-shadow;
+}
+
+$swg-scroll-bar-color: #01b5c9;
+.ui-grid-viewport {
+  overflow-x: hidden !important;
+}
+
+.ui-grid-row .ui-grid-cell {
+  font-size: 80%;
+  line-height: 170%;
+  border-color: $swg-menu-border-color;
+}
+/*.ui-grid-row:nth-child(even) .ui-grid-cell {
+  background-color: darken($swg-menu-border-color, 15%);
+}
+.ui-grid-row:nth-child(odd) .ui-grid-cell {
+  background-color: darken($swg-menu-border-color, 25%);
+}*/
+.ui-grid-row:nth-child(odd) .ui-grid-cell, .ui-grid-row:nth-child(even) .ui-grid-cell {
+  background-color: transparent;
+}
+.character-skill-mods .ui-grid-row {
+  border-bottom: solid 1px $swg-menu-border-color;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: $swg-button-border;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $swg-menu-border-color;
+}
+::-webkit-scrollbar-button {
+  height: 0px;
+}
+::-webkit-scrollbar-corner {
+  background-color: $swg-button-border;
+}
+
+$swg-skill-box-bg-red: #d43131;
+
+.swg-ui-button, .learned-professions .swg-ui-button {
+  @include swg-skill-single;
+  background-color: $swg-skill-box-bg-color;
+  box-shadow: $swg-button-button-shadow;
+  color: lighten($swg-skill-box-bg-color, 55%);
+  padding: 0 4px;
+  margin: 2px 4px;
+  border: none;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  min-height: initial;
+  &:hover {
+    background-color:lighten($swg-skill-box-bg-color, 30%);
+    color: $swg-skill-box-font-color;
+    cursor: pointer;
+  }
+  &.selected {
+    background-color: $swg-skill-box-bg-color-selected;
+    border-color: $swg-skill-box-border-color-selected;
+  }
+  &.selected:hover {
+    background-color: lighten($swg-skill-box-bg-color-selected, 30%);
+    border-color: $swg-skill-box-border-color-selected;
+    cursor: pointer;
+  }
+  &:after {
+    @include swg-skill-box-corner($swg-menu-outer-bg, $swg-button-border);
+    top: -5px;
+    right: -5px;
+  }
+  &:before {
+    @include swg-skill-box-corner($swg-menu-outer-bg, $swg-button-border);
+    bottom: -5px;
+    left: -5px;
+  }
+  &.selected:after {
+    @include swg-skill-box-corner($swg-menu-outer-bg, $swg-skill-box-border-color-selected);
+  }
+  &.selected:before {
+    @include swg-skill-box-corner($swg-menu-outer-bg, $swg-skill-box-border-color-selected);
+  }
+  .swg-ui-button-name {
+    color: lighten($swg-skill-box-bg-color, 55%);
+    padding: 8px 14px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .swg-ui-button-close {
+    font-size: 80%;
+    position: relative;
+    top: -4px;
+    right: 4px;
+    text-decoration: none;
+
+    span {
+      color: lighten($swg-skill-box-bg-color, 55%);
+    }
+  }
+  &.swg-ui-button-red {
+    padding: 4px 15px;
+    color: lighten($swg-skill-box-bg-red, 45%);
+    background-color: $swg-skill-box-bg-red;
+    box-shadow: inset 0 0 0 1px darken($swg-skill-box-bg-red, 15%);
+
+    &.swg-ui-button-name {
+      color: lighten($swg-skill-box-bg-red, 45%);
+    }
+    &:hover {
+      background-color:lighten($swg-skill-box-bg-red, 10%);
+      color: $swg-skill-box-font-color;
+      cursor: pointer;
+    }
+    &:after {
+      @include swg-skill-box-corner($swg-menu-inner-bg, darken($swg-skill-box-bg-red, 15%));
+    }
+    &:before {
+      @include swg-skill-box-corner($swg-menu-inner-bg, darken($swg-skill-box-bg-red, 15%));
+    }
+  }
+}
+
+.learned-profession-row {
+  margin-bottom: 15px;
+}
+
+/* Skill Information */
+.ui-grid-top-panel {
+  background-color: $swg-menu-inner-bg;
+}
+
+.ui-grid-header {
+  border: none;
+}
+
+$swg-menu-inner-bg-md: #0a718a;
+$swg-menu-inner-border-md: #30b8ce;
+
+.skill-points-bar {
+  .progress {
+    height: 14px;
+    border-radius: 4px;
+    margin-bottom: 0px;
+    background-color: $swg-menu-inner-bg-md;
+    background-image: url("../imgs/skillpoints-used.png");
+    background-repeat: repeat-x;
+    background-position: center;
+  }
+  .progress-bar-success {
+    background-image: url("../imgs/skillpoints-free.png");
+    background-repeat: repeat-x;
+  }
+}
+
+.profession-trees, .character-skill-mods, .experience-summary, .skill-points-wrap {
+  @include profession-trees;
+}
+
+.skill-points-wrap {
+  text-shadow: $swg-skill-box-text-shadow;
+}
+
+.skill-points-bar {
+  padding: 6px 10px;
+  background-color: $swg-menu-inner-bg-md;
+  border-radius: 12px;
+  border-color: $swg-menu-inner-border-md;
+  border-style: solid;
+  border-width: 1px;
+}
+
+=======
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 .swg-single-skill-row {
   @include make-row();
 }
@@ -161,7 +662,14 @@ $swg-skill-box-font-color: #fff;
   @include make-sm-column-offset(4);
   @include make-xs-column(4);
   @include make-xs-column-offset(4);
+<<<<<<< HEAD
+  @include swg-skill-box-wrap();
+}
+.swg-skill-single {
+  @include swg-skill-single();
+=======
   @include swg-skill-box();
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 }
 
 /*
@@ -177,7 +685,11 @@ $swg-skill-box-font-color: #fff;
  */
 
 @mixin swg-pyramid-base($width: 1, $offset: 0) {
+<<<<<<< HEAD
+  @include swg-skill-box-wrap();
+=======
   @include swg-skill-box();
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
   @include make-md-column($width);
   @include make-md-column-offset($offset);
   @include make-sm-column($width);
@@ -236,14 +748,24 @@ $swg-skill-box-font-color: #fff;
  */
 
 @mixin swg-4by4-base($width: 3, $offset: 0) {
+<<<<<<< HEAD
+  @include swg-skill-box-wrap();
+=======
   @include swg-skill-box();
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
   @include make-md-column($width);
   @include make-md-column-offset($offset);
   @include make-sm-column($width);
   //@include make-sm-column-offset(0);
   @include make-xs-column($width);
   //@include make-xs-column-offset(0);
+<<<<<<< HEAD
+  min-height: 48px;
+  padding-right: 1px;
+  padding-left: 1px;
+=======
   min-height: 40px;
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 }
 
 .swg-4by4-row1,.swg-4by4-row2,.swg-4by4-row3,.swg-4by4-row4 {
@@ -263,7 +785,11 @@ $swg-skill-box-font-color: #fff;
  */
 
 @mixin swg-3by4-base($width: 3, $offset :0) {
+<<<<<<< HEAD
+  @include swg-skill-box-wrap();
+=======
   @include swg-skill-box();
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
   @include make-md-column($width);
   @include make-md-column-offset($offset);
   @include make-sm-column($width);
@@ -307,7 +833,11 @@ $swg-skill-box-font-color: #fff;
  */
 
 @mixin swg-2by4-base($width: 3, $offset :0) {
+<<<<<<< HEAD
+  @include swg-skill-box-wrap();
+=======
   @include swg-skill-box();
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
   @include make-md-column($width);
   @include make-md-column-offset($offset);
   @include make-sm-column($width);
@@ -339,4 +869,8 @@ $swg-skill-box-font-color: #fff;
 .swg-2by4-row3-skill1,
 .swg-2by4-row4-skill1 {
   @include swg-2by4-base(3, 2);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b

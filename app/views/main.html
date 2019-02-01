@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+<div class="swg-character-info container">
+  <div class="row learned-profession-row">
+    <div class="col-lg-2">
+      <profession-selection skill-tree="character.skillTree" on-click="selectProfession(data)"></profession-selection>
+    </div>
+    <div class="col-lg-10">
+      <div ng-repeat="(name, data) in professions"  class="learned-professions btn-group">
+        <div class="swg-ui-button selected">
+          <a class="swg-ui-button-name" ng-click="selectProfession(data)">
+            <skill-name skill="data"></skill-name>
+          </a>
+          <a class="swg-ui-button-close" ng-click="removeProfession(data)">
+            <span class="glyphicon glyphicon-remove"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+=======
 <div class="row">
   <h4>Stars Wars Galaxies Online Skillplanner</h4>
 
@@ -24,10 +44,62 @@
   </p>
   <profession-selection skill-tree="character.skillTree" on-click="selectProfession(data)"></profession-selection>
 
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 
   <div ng-if="profession === null">
     Loading... please wait
   </div>
+<<<<<<< HEAD
+  <div ng-if="profession.graph_type && character" class="row">
+    <div class="col-lg-8 profession-wrap">
+      <div class="profession-trees">
+        <div class="row">
+          <div class="col-sm-10">
+            <h3><skill-name skill="profession"></skill-name></h3>
+          </div>
+          <div class="col-sm-2">
+            <button ng-click="reset()" class="swg-ui-button swg-ui-button-red">Reset</button>
+          </div>
+        </div>
+
+        <!-- TODO: fix this tree type selectionup -->
+        <div ng-switch="profession.graph_type" class="swg-skill-sheet">
+          <swg-four-by-four-skilltree ng-switch-when="fourByFour" skilltree="profession" select-skill="selectSkill(skill)"></swg-four-by-four-skilltree>
+          <swg-three-by-four-skilltree ng-switch-when="threeByFour" skilltree="profession" select-skill="selectSkill(skill)"></swg-three-by-four-skilltree>
+          <swg-pyramid-skilltree ng-switch-when="pyramid" skilltree="profession" select-skill="selectSkill(skill)"></swg-pyramid-skilltree>
+          <swg-one-by-four-skilltree ng-show="profession.graph_type === 'oneByFour'" skilltree="profession" select-skill="selectSkill(skill)"></swg-one-by-four-skilltree>
+        </div>
+      </div>
+      <div class="skill-points-wrap">
+        <div class="row">
+            <div class="col-md-3">
+              Skillpoints: {{character.skillPoints}}/250
+            </div>
+            <div class="col-md-9">
+              <div class="skill-points-bar">
+                <progressbar max="250" value="character.skillPoints" type="success"></progressbar>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 character-skill-mods-wrap">
+      <div class="character-skill-mods">
+        <h3>Skill Mods</h3>
+        <mod-summary-table skills="character.selectedSkills"></mod-summary-table>
+      </div>
+    </div>
+    <!--h4>Skills</h4>
+    <skill-summary skills="character.selectedSkills"></skill-summary-->
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="experience-summary">
+        <h4>Experience Required</h4>
+        <experience-summary skills="character.selectedSkills"></experience-summary>
+      </div>
+    </div>
+=======
   <div ng-if="profession.graph_type && character">
     <h3><skill-name skill="profession"></skill-name></h3>
     <p>Skillpoints:
@@ -49,5 +121,6 @@
     <!--h4>Skills</h4>
     <skill-summary skills="character.selectedSkills"></skill-summary-->
 
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
   </div>
 </div>

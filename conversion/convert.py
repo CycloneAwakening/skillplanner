@@ -98,7 +98,15 @@ class Skill(object):
 
     @property
     def is_god_only(self):
+<<<<<<< HEAD
+    	isgod = self.GOD_ONLY
+    	if isgod == 'TRUE':
+    		return True
+    	elif isgod == 'FALSE':
+    		return False
+=======
         return self.GOD_ONLY
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 
     @property
     def skills_required(self):
@@ -408,7 +416,11 @@ def main():
 
     output = json.dumps(professions, cls=SkillEncoder)
 
+<<<<<<< HEAD
+    open('X:\My Desktop\SWG\skillplanner-master\conversion\skills.json','w').write(output)
+=======
     open('skills.json','w').write(output)
+>>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 
 
 if __name__ == "__main__":
