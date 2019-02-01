@@ -1,24 +1,14 @@
 <div class="dropdown" dropdown>
-<<<<<<< HEAD
   <button class="swg-ui-button dropdown-toggle" dropdown-toggle>
     <a class="swg-ui-button-name">
       Select Profession <span class="caret"></span>
     </a>
-=======
-  <button class="btn btn-primary dropdown-toggle" type="button" dropdown-toggle>
-    Select Profession <span class="caret"></span>
->>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
   </button>
   <div class="dropdown-menu" role="menu">
     <div class="container-fluid">
       <div ng-repeat="row in rows" class="row" >
-<<<<<<< HEAD
         <div ng-repeat="(name, skills) in row" class="col-lg-4 col-md-4 col-sm-4 col-xs-6" >
           <strong><skill-name skill="{'name':name}"></skill-name></strong>
-=======
-        <div ng-repeat="(name, skills) in row" class="col-lg-3 col-md-3 col-sm-4 col-xs-6" >
-          <b><skill-name skill="{'name':name}"></skill-name></b>
->>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
           <ul class="list-unstyled">
             <li ng-repeat="(professionName, data) in skills">
               <a href ng-click="onClick({data:data})"><skill-name skill="data"></skill-name></a>

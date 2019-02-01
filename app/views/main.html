@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div class="swg-character-info container">
   <div class="row learned-profession-row">
     <div class="col-lg-2">
@@ -17,39 +16,10 @@
       </div>
     </div>
   </div>
-=======
-<div class="row">
-  <h4>Stars Wars Galaxies Online Skillplanner</h4>
-
-  <p>
-    I made this tool to help the community to be able to move away from ancient windows programs and more into a modern
-    future.
-    The website does not keep track of your templates. Besides the intial loading there is no further communication
-    required.
-    Once you selected a specific template you can just share the URL in the address bar so your friends can have a look.
-  </p>
-</div>
-
-<p class="row">
-  <p>
-    <div ng-repeat="(name, data) in professions"  class="btn-group">
-      <button type="button" class="btn" ng-class="{true:'btn-info', false:'btn-default'}[data.master.selected]" ng-click="selectProfession(data)">
-        <skill-name skill="data"></skill-name>
-
-      </button>
-      <button type="button" class="btn btn-danger" ng-click="removeProfession(data)">
-        <span class="glyphicon glyphicon-remove"></span>
-      </button>
-    </div>
-  </p>
-  <profession-selection skill-tree="character.skillTree" on-click="selectProfession(data)"></profession-selection>
-
->>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
 
   <div ng-if="profession === null">
     Loading... please wait
   </div>
-<<<<<<< HEAD
   <div ng-if="profession.graph_type && character" class="row">
     <div class="col-lg-8 profession-wrap">
       <div class="profession-trees">
@@ -99,28 +69,5 @@
         <experience-summary skills="character.selectedSkills"></experience-summary>
       </div>
     </div>
-=======
-  <div ng-if="profession.graph_type && character">
-    <h3><skill-name skill="profession"></skill-name></h3>
-    <p>Skillpoints:
-    <progressbar max="250" value="character.skillPoints" type="success">{{character.skillPoints}}/250</progressbar>
-    </p>
-    <button ng-click="reset()" class="btn btn-danger">Reset</button>
-
-    <!-- TODO: fix this tree type selectionup -->
-    <div ng-switch="profession.graph_type">
-      <swg-four-by-four-skilltree ng-switch-when="fourByFour" skilltree="profession" select-skill="selectSkill(skill)"></swg-four-by-four-skilltree>
-      <swg-pyramid-skilltree ng-switch-when="pyramid" skilltree="profession" select-skill="selectSkill(skill)"></swg-pyramid-skilltree>
-      <swg-one-by-four-skilltree ng-show="profession.graph_type === 'oneByFour'" skilltree="profession" select-skill="selectSkill(skill)"></swg-one-by-four-skilltree>
-    </div>
-    <h4>Skill Mods</h4>
-    <mod-summary-table skills="character.selectedSkills"></mod-summary-table>
-    <h4>Experience Required</h4>
-    <p><small>TODO: Make pretty!</small></p>
-    <experience-summary skills="character.selectedSkills"></experience-summary>
-    <!--h4>Skills</h4>
-    <skill-summary skills="character.selectedSkills"></skill-summary-->
-
->>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
   </div>
 </div>

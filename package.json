@@ -1,13 +1,9 @@
 {
   "name": "skillplanner",
-  "version": "0.0.0",
-<<<<<<< HEAD
+  "version": "0.0.1",
   "dependencies": {
     "angular": "^1.7.3"
   },
-=======
-  "dependencies": {},
->>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
   "repository": {},
   "devDependencies": {
     "autoprefixer-core": "^5.2.0",
@@ -21,11 +17,7 @@
     "grunt-contrib-concat": "^0.5.0",
     "grunt-contrib-connect": "^0.10.1",
     "grunt-contrib-copy": "^0.8.0",
-<<<<<<< HEAD
     "grunt-contrib-cssmin": "^1.0.2",
-=======
-    "grunt-contrib-cssmin": "^0.12.0",
->>>>>>> 87414e6352aee2a1e22a3dd6a000624cf835085b
     "grunt-contrib-htmlmin": "^0.4.0",
     "grunt-contrib-imagemin": "^0.9.2",
     "grunt-contrib-jshint": "^0.11.0",
